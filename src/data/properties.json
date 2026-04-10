@@ -1,0 +1,281 @@
+{
+  "properties": [
+    {
+      "id": "apt-luxo-centro-sp",
+      "numericId": 1,
+      "title": "Apartamento Luxuoso no Centro",
+      "slug": "apartamento-luxuoso-centro-sp",
+      "price": 1200000,
+      "priceFormatted": "R$ 1.200.000",
+      "location": {
+        "city": "São Paulo",
+        "state": "SP",
+        "neighborhood": "Centro",
+        "address": "Rua Exemplo, 123",
+        "zipCode": "01310-100",
+        "coordinates": {
+          "lat": -23.5505,
+          "lng": -46.6333
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "parkingSpaces": 2,
+        "area": 150,
+        "builtYear": 2020,
+        "furnished": false
+      },
+      "features": [
+        "Piscina",
+        "Academia",
+        "Segurança 24h",
+        "Varanda gourmet",
+        "Piso aquecido",
+        "Automação residencial",
+        "Vista panorâmica"
+      ],
+      "description": "Apartamento de alto padrão com acabamento premium, localizado no coração de São Paulo. Condomínio completo com infraestrutura de lazer, incluindo piscina aquecida, academia equipada e espaço gourmet. Varanda ampla com churrasqueira e vista privilegiada da cidade. Sistema de automação integrado e piso aquecido em todos os ambientes.",
+      "shortDescription": "3 quartos • 150m² • Condomínio com piscina e segurança",
+      "images": [
+        "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=1200&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560184897-6b580b2b0b3b?q=80&w=800&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1560449810-0defabf1b3b9?q=80&w=800&auto=format&fit=crop"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?q=80&w=400&auto=format&fit=crop",
+      "model3D": "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+      "type": "apartment",
+      "status": "available",
+      "featured": true,
+      "createdAt": "2024-01-15T10:00:00Z",
+      "updatedAt": "2024-12-20T15:30:00Z"
+    },
+    {
+      "id": "casa-beira-mar-rj",
+      "numericId": 2,
+      "title": "Casa à Beira-Mar",
+      "slug": "casa-beira-mar-rio-janeiro",
+      "price": 800000,
+      "priceFormatted": "R$ 800.000",
+      "location": {
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "neighborhood": "Barra da Tijuca",
+        "address": "Av. do Pepê, 500",
+        "zipCode": "22620-170",
+        "coordinates": {
+          "lat": -23.0045,
+          "lng": -43.3646
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parkingSpaces": 1,
+        "area": 120,
+        "builtYear": 2018,
+        "furnished": true
+      },
+      "features": [
+        "Vista mar",
+        "Acesso à praia",
+        "Varanda ampla",
+        "Churrasqueira",
+        "Ar condicionado",
+        "Mobiliada"
+      ],
+      "description": "Casa confortável com vista privilegiada para o mar, localizada a poucos metros da praia. Ambientes integrados com varanda ampla perfeita para momentos de lazer. Acabamentos modernos e funcionalidade para o dia a dia. Churrasqueira e área gourmet externa. Completamente mobiliada com decoração sofisticada.",
+      "shortDescription": "2 quartos • 120m² • Vista mar",
+      "images": [
+        "imagem/casa beira mar.avif",
+        "https://images.unsplash.com/photo-1582582494703-8a3f2fd4c0a9?q=80&w=800&auto=format&fit=crop"
+      ],
+      "thumbnail": "imagem/casa beira mar.avif",
+      "model3D": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb",
+      "type": "house",
+      "status": "available",
+      "featured": true,
+      "createdAt": "2024-02-10T14:20:00Z",
+      "updatedAt": "2024-12-18T09:15:00Z"
+    },
+    {
+      "id": "studio-moderno-sp",
+      "numericId": 3,
+      "title": "Studio Moderno",
+      "slug": "studio-moderno-sao-paulo",
+      "price": 450000,
+      "priceFormatted": "R$ 450.000",
+      "location": {
+        "city": "São Paulo",
+        "state": "SP",
+        "neighborhood": "Vila Madalena",
+        "address": "Rua Harmonia, 780",
+        "zipCode": "05435-000",
+        "coordinates": {
+          "lat": -23.5489,
+          "lng": -46.6847
+        }
+      },
+      "details": {
+        "bedrooms": 1,
+        "bathrooms": 1,
+        "parkingSpaces": 1,
+        "area": 42,
+        "builtYear": 2022,
+        "furnished": false
+      },
+      "features": [
+        "Próximo ao metrô",
+        "Planta aberta",
+        "Varanda",
+        "Infraestrutura completa",
+        "Área de lazer"
+      ],
+      "description": "Studio moderno com projeto arquitetônico inteligente que otimiza cada metro quadrado. Planta aberta integrando todos os ambientes de forma funcional. Localização privilegiada próximo ao metrô e comércio. Condomínio novo com infraestrutura de lazer. Ideal para investidores ou jovens profissionais.",
+      "shortDescription": "1 quarto • 42m² • Próximo ao metrô",
+      "images": [
+        "https://images.unsplash.com/photo-1597094938301-5d4b8c1d1b2c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1597094938301-5d4b8c1d1b2c?q=80&w=400&auto=format&fit=crop",
+      "model3D": "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+      "type": "apartment",
+      "status": "available",
+      "featured": false,
+      "createdAt": "2024-03-05T11:45:00Z",
+      "updatedAt": "2024-12-22T16:20:00Z"
+    },
+    {
+      "id": "casa-familiar-poa",
+      "numericId": 4,
+      "title": "Casa Familiar",
+      "slug": "casa-familiar-porto-alegre",
+      "price": 650000,
+      "priceFormatted": "R$ 650.000",
+      "location": {
+        "city": "Porto Alegre",
+        "state": "RS",
+        "neighborhood": "Três Figueiras",
+        "address": "Rua Anita Garibaldi, 320",
+        "zipCode": "91330-000",
+        "coordinates": {
+          "lat": -30.0346,
+          "lng": -51.2177
+        }
+      },
+      "details": {
+        "bedrooms": 3,
+        "bathrooms": 2,
+        "parkingSpaces": 2,
+        "area": 130,
+        "builtYear": 2019,
+        "furnished": false
+      },
+      "features": [
+        "Quintal amplo",
+        "Garagem para 2 carros",
+        "Churrasqueira",
+        "Segurança",
+        "Próximo a escolas"
+      ],
+      "description": "Residência ideal para famílias, com ambientes bem distribuídos e área externa ampla. Quintal espaçoso perfeito para crianças e pets. Churrasqueira coberta para momentos de lazer. Localização privilegiada próxima a escolas, comércio e áreas verdes. Garagem coberta para 2 veículos e segurança 24h.",
+      "shortDescription": "3 quartos • 130m² • Quintal amplo",
+      "images": [
+        "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=400&auto=format&fit=crop",
+      "model3D": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb",
+      "type": "house",
+      "status": "available",
+      "featured": false,
+      "createdAt": "2024-04-12T08:30:00Z",
+      "updatedAt": "2024-12-21T13:40:00Z"
+    },
+    {
+      "id": "apt-varanda-sp",
+      "numericId": 5,
+      "title": "Apartamento com Varanda",
+      "slug": "apartamento-varanda-jardins-sp",
+      "price": 980000,
+      "priceFormatted": "R$ 980.000",
+      "location": {
+        "city": "São Paulo",
+        "state": "SP",
+        "neighborhood": "Jardins",
+        "address": "Alameda Jaú, 1500",
+        "zipCode": "01420-002",
+        "coordinates": {
+          "lat": -23.5629,
+          "lng": -46.6676
+        }
+      },
+      "details": {
+        "bedrooms": 2,
+        "bathrooms": 2,
+        "parkingSpaces": 2,
+        "area": 100,
+        "builtYear": 2021,
+        "furnished": false
+      },
+      "features": [
+        "Varanda gourmet",
+        "Vista privilegiada",
+        "Segurança 24h",
+        "Academia",
+        "Salão de festas",
+        "Piscina"
+      ],
+      "description": "Apartamento com planta eficiente e ambientes bem aproveitados. Varanda gourmet integrada com churrasqueira e vista privilegiada. Excelente posição solar e ventilação natural. Condomínio completo com academia, piscina e salão de festas. Localização nobre próxima a restaurantes e comércio sofisticado.",
+      "shortDescription": "2 quartos • 100m² • Varanda gourmet",
+      "images": [
+        "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?q=80&w=400&auto=format&fit=crop",
+      "model3D": "https://modelviewer.dev/shared-assets/models/Astronaut.glb",
+      "type": "apartment",
+      "status": "available",
+      "featured": true,
+      "createdAt": "2024-05-20T10:15:00Z",
+      "updatedAt": "2024-12-23T11:25:00Z"
+    },
+    {
+      "id": "cobertura-penthouse-rj",
+      "numericId": 6,
+      "title": "Cobertura Penthouse",
+      "slug": "cobertura-penthouse-rj",
+      "price": 2200000,
+      "priceFormatted": "R$ 2.200.000",
+      "location": {
+        "city": "Rio de Janeiro",
+        "state": "RJ",
+        "neighborhood": "Leblon",
+        "address": "",
+        "zipCode": "",
+        "coordinates": {
+          "lat": 0,
+          "lng": 0
+        }
+      },
+      "details": {
+        "bedrooms": 4,
+        "bathrooms": 1,
+        "parkingSpaces": 1,
+        "area": 320,
+        "builtYear": 2026,
+        "furnished": false
+      },
+      "features": [],
+      "description": "Cobertura de alto luxo com acabamentos exclusivos e tecnologia de ponta. Piscina privativa com deck e vista 360º para o mar e montanhas. Terraço amplo com área gourmet completa. Home theater com isolamento acústico, adega climatizada para 200 garrafas e spa com sauna. Elevador privativo com acesso direto ao apartamento. Projeto assinado por arquiteto renomado.",
+      "shortDescription": "4 quartos • 320m² • Piscina privativa",
+      "images": [
+        "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop"
+      ],
+      "thumbnail": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?q=80&w=1200&auto=format&fit=crop",
+      "model3D": "https://modelviewer.dev/shared-assets/models/NeilArmstrong.glb",
+      "type": "penthouse",
+      "status": "available",
+      "featured": true,
+      "createdAt": "2024-06-08T14:50:00Z",
+      "updatedAt": "2026-04-08T05:05:02.357Z"
+    }
+  ]
+}
