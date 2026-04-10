@@ -62,10 +62,10 @@ function Header() {
           <ul>
             <li><Link to="/" onClick={() => setMenuOpen(false)}>Início</Link></li>
             <li><Link to="/catalogo" onClick={() => setMenuOpen(false)}>Catálogo</Link></li>
-            <li><a href="/#historia" onClick={() => setMenuOpen(false)}>Minha História</a></li>
-            <li><a href="/#diferenciais" onClick={() => setMenuOpen(false)}>Vantagens</a></li>
-            <li><a href="/#testimonials" onClick={() => setMenuOpen(false)}>Depoimentos</a></li>
-            <li><a href="/#blog" onClick={() => setMenuOpen(false)}>Notícias</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}#historia`} onClick={() => setMenuOpen(false)}>Minha História</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}#diferenciais`} onClick={() => setMenuOpen(false)}>Vantagens</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}#testimonials`} onClick={() => setMenuOpen(false)}>Depoimentos</a></li>
+            <li><a href={`${import.meta.env.BASE_URL}#blog`} onClick={() => setMenuOpen(false)}>Notícias</a></li>
             <li><a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+imobili%C3%A1ria.`} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Contato</a></li>
           </ul>
         </nav>
