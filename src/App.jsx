@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from 'react'
-import { Link, Navigate, Route, Routes, useLocation, useParams } from 'react-router-dom'
+import { Link, Navigate, Route, Routes, useLocation, useNavigate, useParams } from 'react-router-dom'
 import propertiesData from './data/properties.json'
 
 const WHATSAPP_NUMBER = '5511999999999'
@@ -13,6 +13,8 @@ function asImagePath(path) {
 }
 
 function Header() {
+  const navigate = useNavigate()
+  const location = useLocation()
   const [menuOpen, setMenuOpen] = useState(false)
   const [theme, setTheme] = useState('light')
 
@@ -45,6 +47,21 @@ function Header() {
     }
   }
 
+  const scrollToSection = (sectionId) => {
+    const scrollNow = () => {
+      const target = document.getElementById(sectionId)
+      if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    }
+
+    if (location.pathname !== '/') {
+      navigate('/')
+      window.setTimeout(scrollNow, 60)
+    } else {
+      scrollNow()
+    }
+    setMenuOpen(false)
+  }
+
   return (
     <header className="site-header" role="banner">
       <div className="container header-inner">
@@ -62,10 +79,10 @@ function Header() {
           <ul>
             <li><Link to="/" onClick={() => setMenuOpen(false)}>Início</Link></li>
             <li><Link to="/catalogo" onClick={() => setMenuOpen(false)}>Catálogo</Link></li>
-            <li><a href={`${import.meta.env.BASE_URL}#historia`} onClick={() => setMenuOpen(false)}>Minha História</a></li>
-            <li><a href={`${import.meta.env.BASE_URL}#diferenciais`} onClick={() => setMenuOpen(false)}>Vantagens</a></li>
-            <li><a href={`${import.meta.env.BASE_URL}#testimonials`} onClick={() => setMenuOpen(false)}>Depoimentos</a></li>
-            <li><a href={`${import.meta.env.BASE_URL}#blog`} onClick={() => setMenuOpen(false)}>Notícias</a></li>
+            <li><a href="#" onClick={(event) => { event.preventDefault(); scrollToSection('historia') }}>Minha História</a></li>
+            <li><a href="#" onClick={(event) => { event.preventDefault(); scrollToSection('diferenciais') }}>Vantagens</a></li>
+            <li><a href="#" onClick={(event) => { event.preventDefault(); scrollToSection('testimonials') }}>Depoimentos</a></li>
+            <li><a href="#" onClick={(event) => { event.preventDefault(); scrollToSection('blog') }}>Notícias</a></li>
             <li><a href={`https://wa.me/${WHATSAPP_NUMBER}?text=Ol%C3%A1%2C+gostaria+de+mais+informa%C3%A7%C3%B5es+sobre+a+imobili%C3%A1ria.`} target="_blank" rel="noopener noreferrer" onClick={() => setMenuOpen(false)}>Contato</a></li>
           </ul>
         </nav>
@@ -565,9 +582,26 @@ function PropertyPage() {
 }
 
 function Layout() {
+  const location = useLocation()
+
+  const scrollToMain = (event) => {
+    event.preventDefault()
+    const target = document.getElementById('main-content')
+    if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
+
+  useEffect(() => {
+    if (!location.hash) return
+    const id = location.hash.replace('#', '')
+    const target = document.getElementById(id)
+    if (target) {
+      window.setTimeout(() => target.scrollIntoView({ behavior: 'smooth', block: 'start' }), 60)
+    }
+  }, [location.hash])
+
   return (
     <>
-      <a href="#main-content" className="skip-link">Pular para o conteúdo principal</a>
+      <a href="#" className="skip-link" onClick={scrollToMain}>Pular para o conteúdo principal</a>
       <Header />
       <Routes>
         <Route path="/" element={<HomePage />} />
